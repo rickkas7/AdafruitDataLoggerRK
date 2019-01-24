@@ -4,6 +4,8 @@
 
 ![Adafruit AdaLogger](images/feather-logger.jpg)
 
+This library helps using [Adafruit AdaLogger FeatherWing](https://www.adafruit.com/product/2922) SD card and real-time-clock (RTC). You can find more about the board [here](https://learn.adafruit.com/adafruit-adalogger-featherwing/overview).
+
 This library is just a wrapper around the two things on the FeatherWing:
 
 - [Adafruit\_RTClib\_RK](https://github.com/rickkas7/Adafruit_RTClib_RK), a port of the Adafruit RTCLib (real time clock)
@@ -17,7 +19,7 @@ The SD card is connected to the SPI bus and the default connection for the CS pi
 | MISO | SD Card DO |
 | MOSI | SD Card DI |
 | SCK | SD Card SCK | 
-| D5 | SD Card CS
+| D5 | SD Card CS |
 
 The RTC can only be used if the CR1220 battery is inserted. It connects by I2C and uses address 0x68.
 
